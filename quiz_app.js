@@ -15,8 +15,8 @@ const questionBank = [
   {
     id: 3,
     question: "When using fuses to provide primary-only protection, what is the maximum size overcurrent protective device permitted to protect a 4kVA, 480V primary, 120V secondary, single-phase transformer?",
-    answer: "15 A",
-    source: "inferred from primary current and NEC transformer OCPD standard sizing"
+    answer: "10 A",
+    source: "primary current x 167%, rounded down to the next available OCPD because the table multiplier is not 125%"
   },
   {
     id: 4,
@@ -41,8 +41,8 @@ const questionBank = [
   {
     id: 7,
     question: "What is the calculated primary current of a 60kVA, 3-phase transformer with a primary voltage rating of 480 volts? (Round your FINAL answer to the nearest hundredth.)",
-    answer: "72.17 A",
-    source: "calculated: 3-phase primary current = kVA x 1000 / (1.732 x volts)"
+    answer: "72.25 A",
+    source: "calculated: 3-phase primary current = kVA x 1000 / (1.73 x volts)"
   },
   {
     id: 8,
@@ -61,8 +61,8 @@ const questionBank = [
     id: 10,
     question: "When using primary-only protection, what is the maximum standard size fuse permitted to protect the primary a 250kVA, 13.8kV primary, 208Y/120V secondary, 3-phase transformer, with 3.8% impedance, when installed in an unsupervised location?",
     choices: ["a. 30 A", "b. 35 A", "c. 40 A", "d. 100 A"],
-    answer: "b",
-    source: "inferred from primary current, impedance/location rule, and standard fuse size"
+    answer: "a",
+    source: "primary current calculated with 1.73, then rounded down because the table multiplier is not 125%"
   },
   {
     id: 11,
@@ -102,8 +102,8 @@ const questionBank = [
   {
     id: 16,
     question: "What is the calculated secondary current of a 50kVA, 3-phase transformer with a secondary voltage rating of 240 volts? (Round your FINAL answer to the nearest hundredth.)",
-    answer: "120.28 A",
-    source: "calculated: 3-phase secondary current = kVA x 1000 / (1.732 x volts)"
+    answer: "120.42 A",
+    source: "calculated: 3-phase secondary current = kVA x 1000 / (1.73 x volts)"
   },
   {
     id: 17,
@@ -181,14 +181,14 @@ const questionBank = [
   {
     id: 28,
     question: "When using primary and secondary protection, what is the maximum standard size overcurrent protective device permitted to protect a 90kVA, 480V primary, 208Y/120V secondary, 3-phase transformer when installed on the primary side?",
-    answer: "300 A",
-    source: "calculated from 90 kVA primary current and primary/secondary protection sizing"
+    answer: "250 A",
+    source: "primary current calculated with 1.73, then rounded down because the table multiplier is not 125%"
   },
   {
     id: 29,
     question: "What is the calculated primary current of a 105kVA, 3-phase transformer with a primary voltage rating of 480 volts? (Round your FINAL answer to the nearest hundredth.)",
-    answer: "126.30 A",
-    source: "calculated: 3-phase primary current = kVA x 1000 / (1.732 x volts)"
+    answer: "126.45 A",
+    source: "calculated: 3-phase primary current = kVA x 1000 / (1.73 x volts)"
   },
   {
     id: 30,
