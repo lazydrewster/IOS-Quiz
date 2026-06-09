@@ -61,8 +61,8 @@ const questionBank = [
     id: 10,
     question: "When using primary-only protection, what is the maximum standard size fuse permitted to protect the primary a 250kVA, 13.8kV primary, 208Y/120V secondary, 3-phase transformer, with 3.8% impedance, when installed in an unsupervised location?",
     choices: ["a. 30 A", "b. 35 A", "c. 40 A", "d. 100 A"],
-    answer: "a",
-    source: "primary current calculated with 1.73, then rounded down because the table multiplier is not 125%"
+    answer: "b",
+    source: "Table 450.3(A) primary current calculated with 1.73, then rounded up to the next standard fuse size"
   },
   {
     id: 11,
@@ -285,7 +285,7 @@ function getQuiz(setId = state.activeSetId) {
 }
 
 function getActiveSet() {
-  return quizSets[state.activeSetId];
+  return quizSets[state.activeSetId;
 }
 
 const state = {
